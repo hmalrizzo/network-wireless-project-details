@@ -1,4 +1,22 @@
 Paper By - Nazmus Saquib, Ekram Hossain, and Dong In Kim
 
-Important Points :
+Abstract : HetNet systems ICIC Management. Comparison of strict FFR , soft FFR , FFR 3 and Optimal Static FFR Schemes.
 
+ICIC Management in HetNets and FFR:
+
+Strict FFR Scheme : 
+1. Frequency reuse factor (FRF) : 1 for Central Region
+2. FRF : N for cell - edge regions.
+3. Number of sub-bands : N + 1
+4. No inter-cell co-tier interference
+5. Important design parameter here is : centre-zone cell radius = 0.65 * Radius of the macro cell for which the throughput is maximized.
+6. The parameter R-center is obtained using Monte-Carle simulations shown in 
+    T. Novlan, J. G. Andrews, I. Sohn, R. K. Ganti, and A. Ghosh, 
+    “Comparison of Fractional Frequency Reuse Approaches in the OFDMA Cellular Downlink,”
+    Proc. of IEEE Globecom 2010 , pp. 1–5, 6-10 Dec. 2010
+
+7. Sub band allocation for center is K-center = [ K-band * ( R-center / R )^2 ]
+8. Sub band allocation for edge cell is K-edge = [ ( K-band - K-center ) / N ]
+
+Soft FFR Scheme :
+1. 
