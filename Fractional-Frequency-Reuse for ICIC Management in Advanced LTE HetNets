@@ -18,5 +18,19 @@ Strict FFR Scheme :
 7. Sub band allocation for center is K-center = [ K-band * ( R-center / R )^2 ]
 8. Sub band allocation for edge cell is K-edge = [ ( K-band - K-center ) / N ]
 
+
+
 Soft FFR Scheme :
-1. 
+1. It is similar to Strict FFR.
+2. The center region of any cell is allowed to use sub-bands of cell-edge zone.
+3. Total number of available sub-channels in a cell is divided into N sub-bands with each sub band alloted to cell-edge region.
+4. Soft FFR is more bandwidth efficient than strict FFR.
+5. Both center region and edge region UE's will experience interference.
+6. A power control factor ( E ) is introduced for edge-zone UE to reduce inter cell interference.
+7. If UE 'm' is located in center zone then transmit power on sub-channel 'k' is P-m|k and if the user is in cell-edge zone then E*P-m|k
+8. Sub band allocation for edge-zone UE's are : K-edge = min( K-band/N , K-band - K-center )
+
+
+FFR - 3 Scheme:
+1. Coverage Area is divided into centre - zone and edge - zone including three sectors per each.
+2. 
