@@ -33,4 +33,47 @@ Soft FFR Scheme :
 
 FFR - 3 Scheme:
 1. Coverage Area is divided into centre - zone and edge - zone including three sectors per each.
-2. 
+2. One part of the sub - band is solely assigned to the centre region and remaining are assigned to the subregion. 
+3. A Femtos in the coverage area chooses a sub-band which is not used in the macro - sub area and also not the sub-band used in the cell-edge region of the current sector.
+4. Intra - cell cross tier interference is minimized. Due to sectorizing the inter-cell cross-tier interference also reduced.
+5. The performance of sectored FFR is improved by optimizing the edge zone FRF , centre zone radius and allocation of frequency resources in centre and edge zone so that overall throughput is maximized.
+6. Converting into optimization problem the FRF for which the network throughput is maximized is 6.
+
+Optimal Static FFR:
+1. Here the number of sectors is 6.
+2. Inter-cell interference for any cell-edge region will be from only one eNodeB.
+3. Intra-cell interference also greatly reduced since there is no sub-band shared between cell-edge and centre region.
+
+
+PERFORMANCE METRICS:
+1. Outage Probability
+2. Network throughput ( or Network - sum )
+3. spectral efficiency
+
+SINR for downlink transmission to UE X-m from eNodeB m on sub-channel k is = P*h*G/ ( N*( change in B )  +  ( Sum( P*h*G ) - neighbouring eNodeB ) + ( Sum( P*G ) - this eNodeB ) )
+1. P - transmit Power
+2. h - exponentially distributed channel fading power gain associated with sub-channel k
+3. G - path loss associated with sub-channel between the macro and the UE.
+4. N - represents Noise power spectral density
+5. change in B - maximum achievable capacity for an UE X-m to achieve on sub-channel k.
+
+Outage Probability :
+1. It is defined as the  probability that the UE's instantaneous SINR on a given sub-channel k falls below the SINR threshold Y
+2. It is given as P(outage) = P ( SINR-k|m < Y )
+
+Average Network Sum Rate:
+1. Sum-of-all-Users( Sum-over-all-channels ( T*C ) ) / Total Users
+
+T - Assigned 1 if the subchannel is assigned to the users
+C - Maximum Achievable capacity for UE given by ( Delta B )*log-2( 1 + Alpha * SINR-k )
+
+Spectral Efficiency:
+1. It is defined in terms of average bits per second successfully recieved by UE per unit spectrum
+
+The graphs for different schemes are plotted. The graphs are:
+1. ratio of centre-zone radius to cell-radius vs throughput in the cell.
+2. No of Femtos vs avg. spectral efficiency
+3. SINR Threshold vs outage probability
+4, No of Femtos vs Avg. Network Sum Ratio.
+
+Based on the graphs the conclusion is OSFFR is better than standard FFR Schemes
