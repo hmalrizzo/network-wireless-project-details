@@ -5,7 +5,7 @@
 global LTE_config;
 
 %% Debug options
-LTE_config.debug_level = 2;  % 0=no output
+LTE_config.debug_level = 1;  % 0=no output
                              % 1=basic output
                              % 2=extended output
                              
