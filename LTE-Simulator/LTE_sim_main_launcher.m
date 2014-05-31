@@ -22,7 +22,7 @@ print_log(1,'Loaded configuration file\n');
 % Hexagonal Ring = 0
 % Linear = 1
 % Polygon = 2
-LTE_config.eNodeB_arrangment = 1;
+LTE_config.eNodeB_arrangment = 0;
 
 %Selective Antenna
 % Only Sector 1 = 0
