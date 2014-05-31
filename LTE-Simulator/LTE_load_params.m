@@ -5,7 +5,7 @@
 global LTE_config;
 
 %% Debug options
-LTE_config.debug_level = 1;  % 0=no output
+LTE_config.debug_level = 0;  % 0=no output
                              % 1=basic output
                              % 2=extended output
                              
@@ -146,7 +146,7 @@ LTE_config.recalculate_fast_fading = false;
 
 %% eNodeB options
 % LTE_config.antenna.antenna_gain_pattern = 'berger';
-LTE_config.antenna.antenna_gain_pattern = 'TS 36.942'; % As defined in TS 36.942. Identical to Berger, but with a 65° 3dB lobe
+LTE_config.antenna.antenna_gain_pattern = 'TS 36.942'; % As defined in TS 36.942. Identical to Berger, but with a 65ï¿½ 3dB lobe
 
 % LTE_config.antenna.mean_antenna_gain = 14; % For a berger antenna
 % LTE_config.antenna.mean_antenna_gain = 15; % LTE antenna, rural area (900 MHz)
